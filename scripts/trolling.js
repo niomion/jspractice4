@@ -53,7 +53,7 @@ setTimeout(function() {
 function createParagraphWithDelay() {
     if (currentIndex < numberOfParagraphs) {
         var newParagraph = document.createElement('p');
-        newParagraph.textContent = 'Fixing current critical error:' + (currentIndex + 1) + '%';
+        newParagraph.textContent = 'Fixing:' + (currentIndex + 1) + '%';
         parentDiv.appendChild(newParagraph);
         currentIndex++;
         setTimeout(createParagraphWithDelay, delayBetweenCreation);
